@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login Page</title>
+</head>
+<body style="background-color: #fafafa; font-family: Arial, sans-serif; padding: 40px;">
+  <h1 style="text-align: center; color: #333;">Login to Your Account</h1>
+
+  <form method="POST" action="/login" 
+        style="max-width: 400px; margin: auto; background: #fff; padding: 20px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1);">
+
+    <label for="username" style="font-weight: bold;">Username:</label><br>
+    <input type="text" id="username" name="username" required 
+           style="width: 100%; padding: 10px; margin: 10px 0; border-radius: 5px; border: 1px solid #ccc;"><br>
+
+    <label for="password" style="font-weight: bold;">Password:</label><br>
+    <input type="password" id="password" name="password" required 
+           style="width: 100%; padding: 10px; margin: 10px 0; border-radius: 5px; border: 1px solid #ccc;"><br>
+
+    <button type="submit" 
+            style="width: 100%; padding: 12px; background-color: #28a745; color: white; font-size: 16px; border: none; border-radius: 5px; cursor: pointer;">
+      Login
+    </button>
+  </form>
+
+  <p style="text-align: center; margin-top: 20px;">
+    Don’t have an account? <a href="/signup" style="color: #007BFF; font-weight: bold;">Sign up here</a>
+  </p>
+</body>
+</html>
